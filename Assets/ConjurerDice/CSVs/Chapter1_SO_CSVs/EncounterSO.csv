@@ -1,0 +1,17 @@
+EncounterId,Name,isMiniBoss,isBoss,laneCount,rowsPerLane,Rewards
+E1,Tutorial First Roll,False,False,1,3,
+E2,Defense Training,False,False,1,4,RW_DefenseAbility
+E3a,Poison Hazard Intro,False,False,1,3,RW_ManaPlus1
+E3b,Safe Ranged Unlock,False,False,1,3,RW_RangedMinion
+MB1,Mini-Boss: War Elephant Rider,True,False,1,4,RW_ShieldWall
+E5,Recovery Fight,False,False,1,3,RW_FaceSlotPlus1
+E_OptHard,Optional Hard: Sand Snipers,False,False,2,3|3,RW_YakshaBlessing
+E_SweeperIntro,Sweeper Introduction,False,False,2,3|3,RW_SweeperMinion
+MB2,Mini-Boss: Sand Serpent,True,False,2,4|4,RW_Reroll
+E_Cursed,Cursed Path Battle,False,False,2,3|3,RW_CursedAstralDie
+E_Safe,Safe Battle Choice Reward,False,False,2,3|3,RW_PoisonAbility|RW_HealItem
+E_Lava,Lava Hazard Battle,False,False,2,3|3,RW_AttackBoost
+MB3,Mini-Boss: Mirage Assassin,True,False,3,3|3|3,RW_SupportMinion
+E_HazardMix,Hazard Mix Battle,False,False,3,3|3|3,RW_BurnAbility
+E_PreBoss,Pre-Boss Warm-up,False,False,3,4|4|4,
+BOSS,Boss: Maharaja of Mirage,False,True,3,5|5|5,

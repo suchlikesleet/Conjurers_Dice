@@ -1,0 +1,8 @@
+{
+  "name": "ConjurerDice.UI",
+  "references": [
+    "ConjurerDice.Core",
+    "ConjurerDice.Simulation",
+    "ConjurerDice.Dice"
+  ]
+}

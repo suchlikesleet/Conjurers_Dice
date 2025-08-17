@@ -1,0 +1,6 @@
+Id,Kind,Magnitude,Duration
+TILE_PoisonMist,Poison,1,0
+TILE_Spike,Spike,2,0
+TILE_HealingShrine,Heal,2,0
+TILE_Lava,Burn,2,0
+TILE_MirageSwap,Swap,0,0

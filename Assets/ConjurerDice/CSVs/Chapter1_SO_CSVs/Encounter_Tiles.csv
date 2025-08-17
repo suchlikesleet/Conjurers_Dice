@@ -1,0 +1,7 @@
+EncounterId,lane,row,TileRef
+E3a,0,1,TILE_PoisonMist
+MB1,0,2,TILE_Spike
+E_SweeperIntro,0,1,TILE_HealingShrine
+E_Lava,1,1,TILE_Lava
+BOSS,0,1,TILE_MirageSwap
+BOSS,2,1,TILE_MirageSwap

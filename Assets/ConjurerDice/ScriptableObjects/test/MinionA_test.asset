@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d2ef6545a45fe4084da7a3df9d30f3, type: 3}
+  m_Name: MinionA_test
+  m_EditorClassIdentifier: 
+  displayName: SimeTestMinion
+  prefab: {fileID: 9065116062092069193, guid: 34e12ddb827a0624ba0fb18d9c08d5b2, type: 3}
+  baseStats:
+    HP: 1
+    MaxHP: 1
+    ATK: 1
+    DEF: 1
+    MOVType: 0
+    FixedMov: 1
+    MovCap: 1
+    RNG: 1
+  tagSet: {fileID: 0}
+  spawnsAtFront: 0

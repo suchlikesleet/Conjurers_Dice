@@ -1,0 +1,5 @@
+Id,Name,Archetype,BaseATK,BaseDEF,BaseHP,MoveRange,ATKCap,DEFCap,Traits,FusionCompatTags,LinkBonusRule
+MIN_Basic,Apprentice,Simple,1,1,3,1,2,2,—,Simple,RowAdj:+1ATK
+MIN_Ranged,Sand Archer,Ranged,1,0,2,1,3,1,Range:2,Ranged,LaneAdj:+1DEF
+MIN_Sweeper,Dune Sweeper,Sweeper,1,1,3,1,2,2,RowAOE,Sweeper,RowAdj:+1ATK
+MIN_Support,Sand Sage,Support,0,1,3,1,1,3,Buff:+1ATK to ally 1T,Support,LaneAdj:+1DEF

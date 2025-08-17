@@ -1,0 +1,5 @@
+Id,Magnitude,Duration
+ST_Poison,1,3
+ST_Burn,1,2
+ST_Shield,2,1
+ST_Weaken,1,2

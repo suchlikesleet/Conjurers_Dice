@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6f40f8bda20e8499f6f137f1423e60, type: 3}
+  m_Name: testD3Dice
+  m_EditorClassIdentifier: 
+  faces:
+  - {fileID: 11400000, guid: 01dc8eeecbbddd8499cbe813a103c477, type: 2}
+  - {fileID: 11400000, guid: 047b530ed3c25ee4384ae5273b862f4e, type: 2}
+  - {fileID: 11400000, guid: c9728af6b915fb94b8468acc5cb334dc, type: 2}
+  diceName: Default

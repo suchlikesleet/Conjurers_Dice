@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15d5f894c5be89d4cbb32251240e1c44, type: 3}
+  m_Name: testEncounter
+  m_EditorClassIdentifier: 
+  encounterName: TestEncounter
+  lanes: 3
+  laneLength: 8
+  enemies:
+  - {fileID: 11400000, guid: daa714429f46b0241ba7bfb3304e09e0, type: 2}
+  - {fileID: 11400000, guid: daa714429f46b0241ba7bfb3304e09e0, type: 2}
+  hazards: []

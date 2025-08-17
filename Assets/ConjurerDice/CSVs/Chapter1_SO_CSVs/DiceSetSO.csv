@@ -1,0 +1,4 @@
+Id,Sides,Faces
+DSET_Chapter1_Start_d4,4,FACE_Min_Basic|FACE_Move_1|FACE_Attack_1|FACE_Empty
+DSET_Mid_d6,6,FACE_Min_Basic|FACE_Move_1|FACE_Attack_1|FACE_Ability_Defense|FACE_Empty|FACE_Empty
+DSET_Late_d6,6,FACE_Min_Basic|FACE_Min_Ranged|FACE_Ability_ShieldWall|FACE_Ability_Poison|FACE_Move_1|FACE_Attack_1

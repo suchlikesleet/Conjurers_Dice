@@ -1,0 +1,10 @@
+Id,Name,Behavior,ATK,DEF,HP,Range,Speed
+EN_WeakGuard,Guard,Advancer,1,0,3,1,1
+EN_SlowBruiser,Bruiser,Advancer,2,1,5,1,1
+EN_Shieldbearer,Shieldbearer,Defender,1,3,5,1,1
+EN_EliteGuard,Elite Guard,Advancer,2,1,6,1,1
+EN_SandSniper,Sand Sniper,Ranged,2,0,3,3,1
+MB_WarElephant,War Elephant Rider,BossMini,2,2,12,1,1
+MB_SandSerpent,Sand Serpent,BossMini,2,1,10,2,1
+MB_MirageAssassin,Mirage Assassin,BossMini,3,1,8,1,2
+BOSS_Maharaja,Maharaja of Mirage,BossMain,3,2,20,2,1

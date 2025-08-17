@@ -1,0 +1,14 @@
+EncounterId,RewardIds
+E2,RW_DefenseAbility
+E3a,RW_ManaPlus1
+E3b,RW_RangedMinion
+MB1,RW_ShieldWall
+E5,RW_FaceSlotPlus1
+E_OptHard,RW_YakshaBlessing
+E_SweeperIntro,RW_SweeperMinion
+MB2,RW_Reroll
+E_Cursed,RW_CursedAstralDie
+E_Safe,RW_PoisonAbility|RW_HealItem
+E_Lava,RW_AttackBoost
+MB3,RW_SupportMinion
+E_HazardMix,RW_BurnAbility

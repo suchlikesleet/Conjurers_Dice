@@ -1,0 +1,6 @@
+{
+  "name": "ConjurerDice.Simulation",
+  "references": [
+    "ConjurerDice.Core"
+  ]
+}

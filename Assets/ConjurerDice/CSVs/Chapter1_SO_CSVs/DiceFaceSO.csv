@@ -1,0 +1,12 @@
+Id,FaceType,MinionRef,AbilityRef,NumberValue,PointCost,UnlockFlag
+FACE_Min_Basic,Minion,MIN_Basic,,0,1,
+FACE_Move_1,Number,,,1,0,
+FACE_Attack_1,Number,,,1,0,
+FACE_Empty,Empty,,,0,0,
+FACE_Min_Ranged,Minion,MIN_Ranged,,0,2,Unlock_MIN_Ranged
+FACE_Min_Sweeper,Minion,MIN_Sweeper,,0,2,Unlock_MIN_Sweeper
+FACE_Min_Support,Minion,MIN_Support,,0,2,Unlock_MIN_Support
+FACE_Ability_Defense,Ability,,Ability:DEFENSE,0,1,Unlock_DEFENSE
+FACE_Ability_ShieldWall,Ability,,Ability:SHIELD_WALL,0,2,Unlock_SHIELD_WALL
+FACE_Ability_Poison,Ability,,Ability:POISON,0,2,Unlock_POISON
+FACE_Ability_Burn,Ability,,Ability:BURN,0,2,Unlock_BURN

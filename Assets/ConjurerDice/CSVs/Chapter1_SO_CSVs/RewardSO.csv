@@ -1,0 +1,16 @@
+Id,optional,hasTradeOff,benefit,drawback,grantRef
+RW_DefenseAbility,False,False,Unlock Defense ability (+1 DEF 1T),,Ability:DEFENSE
+RW_ManaPlus1,False,False,+1 Max Mana,,Meta:ManaCap+1
+RW_ShieldWall,False,False,Shield Wall (+2 DEF 1T),,Ability:SHIELD_WALL
+RW_FaceSlotPlus1,False,False,+1 Dice Face Slot,,Meta:FaceSlot+1
+RW_RangedMinion,False,False,Unlock Ranged Minion,,Minion:MIN_Ranged
+RW_Reroll,False,False,Unlock Reroll (1/turn),,Power:REROLL
+RW_PoisonAbility,False,False,Unlock Poison ability (DoT),,Ability:POISON
+RW_SweeperMinion,False,False,Unlock Sweeper Minion,,Minion:MIN_Sweeper
+RW_AttackBoost,False,False,+1 ATK to all minions (perm),,Meta:AllMinionsATK+1
+RW_SupportMinion,False,False,Unlock Support Minion,,Minion:MIN_Support
+RW_Premonition,False,False,Unlock Premonition,,Power:PREMONITION
+RW_BurnAbility,False,False,Unlock Burn ability (DoT),,Ability:BURN
+RW_YakshaBlessing,True,True,+2 Mana per turn,Enemies +1 Move,Curse:YAKSHA_BLESS
+RW_CursedAstralDie,True,True,+1 Face Slot,One face is SKIP for 3 encounters,Curse:ASTRAL_DIE
+RW_HealItem,False,False,Restore health to minions,,Item:HEALING
