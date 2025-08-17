@@ -30,6 +30,7 @@ namespace ConjurerDice
         [SerializeField] private TurnPhaseEventChannelSO onPhaseChanged;
         [SerializeField] private EncounterResultEventChannelSO onEncounterCompleted;
         [SerializeField] private DiceLoadoutConfirmedEventSO onLoadoutConfirmed;
+        [SerializeField] private EnemyPhaseCoordinator enemyCoordinator;
 
         // Runtime state
         private readonly List<IEnemyActor> _enemies = new();
@@ -39,8 +40,10 @@ namespace ConjurerDice
 
         private void OnEnable()
         {
+            if (enemyCoordinator == null) enemyCoordinator = FindFirstObjectByType<EnemyPhaseCoordinator>();
             if (onPhaseChanged != null) onPhaseChanged.OnRaised += HandlePhase;
             if (onLoadoutConfirmed != null) onLoadoutConfirmed.OnRaised += HandleLoadoutConfirmed;
+            
         }
 
         private void OnDisable()
@@ -202,12 +205,18 @@ namespace ConjurerDice
         {
             // Resolve queued abilities if you let enemies push to abilityQueue
             abilityQueue?.ResolveAll();
-
-            foreach (var enemy in _enemies)
+            
+            //Old method 
+            /*foreach (var enemy in _enemies)
             {
                 if (enemy == null) continue;
                 enemy.TickEnemyTurn(board);
-            }
+            }*/
+            
+            //Add a serialized field and kick off the coordinator inside your phase handler.
+            if (enemyCoordinator == null) enemyCoordinator = FindFirstObjectByType<EnemyPhaseCoordinator>();
+            enemyCoordinator?.BeginEnemyPhase();
+            
         }
 
         private void OnEndPhase()

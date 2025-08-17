@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 namespace ConjurerDice
 {
@@ -9,6 +10,7 @@ namespace ConjurerDice
         [SerializeField] private IntEventChannelSO onTurnStarted;
         [SerializeField] private IntEventChannelSO onTurnEnded;
         [SerializeField] private TurnPhaseEventChannelSO onPhaseChanged;
+        [SerializeField] private VoidEventChannelSO onEnemyPhaseAllDone;
 
         [Header("Tick Durations")]
         [Tooltip("Seconds to wait between automatic phase transitions (enemy & end).")]
@@ -45,12 +47,33 @@ namespace ConjurerDice
 
         private IEnumerator RunEnemyPhaseThenEnd()
         {
-            // Give listeners a moment to react/queue enemy actions
-            yield return new WaitForSeconds(enemyPhaseDelay);
+            // Enemy phase has just been entered via SetPhase(TurnPhase.Enemy)
+            // Wait until EnemyPhaseCoordinator signals completion.
+            bool finished = false;
+            UnityAction handler = () => finished = true;
+            if (onEnemyPhaseAllDone != null) onEnemyPhaseAllDone.OnRaised += handler;
+
+            // Optional tiny frame so listeners can kick off
+            yield return null;
+
+            // Safety fallback to avoid hard locks in early dev
+            float safetyTimer = 10f; // seconds
+            while (!finished && safetyTimer > 0f)
+            {
+                safetyTimer -= Time.deltaTime;
+                yield return null;
+            }
+
+            if (onEnemyPhaseAllDone != null)
+            {
+                onEnemyPhaseAllDone.OnRaised -= handler;
+                
+            }
+
+            // Proceed to End phase → next turn
             SetPhase(TurnPhase.End);
             yield return new WaitForSeconds(endPhaseDelay);
 
-            // Next turn
             onTurnEnded?.Raise(TurnIndex);
             TurnIndex++;
             onTurnStarted?.Raise(TurnIndex);
