@@ -87,56 +87,7 @@ namespace ConjurerDice
             }
         }
 
-        /*private void SpawnEnemies(EncounterSO enc)
-        {
-            // Safety
-            _enemies.Clear();
-            if (!board) board = FindFirstObjectByType<BoardGrid>();
-            if (enc == null || enc.enemies == null || enc.enemies.Length == 0 || !board) return;
-
-            for (int i = 0; i < enc.enemies.Length; i++)
-            {
-                var spawnDef = enc.enemies[i];
-                if (spawnDef == null || spawnDef.prefab == null) continue;
-
-                // 1) Decide lane: explicit override or round-robin
-                int lane = (spawnDef.laneOverride >= 0 && spawnDef.laneOverride < board.Lanes)
-                           ? spawnDef.laneOverride
-                           : (i % board.Lanes);
-
-                // 2) Decide index: prefer first empty from FRONT; fallback = last tile (front-most)
-                TileRef spawnTile;
-                var frontEmpty = board.FirstEmptyFromFront(lane); // uses your helper
-                if (frontEmpty.HasValue) spawnTile = frontEmpty.Value;
-                else spawnTile = new TileRef(lane, board.LaneLength - 1); // force front-most
-
-                // 3) Instantiate + wire
-                var go = Instantiate(spawnDef.prefab, transform);
-                var enemy = go.GetComponent<EnemyController>();
-                if (enemy == null)
-                {
-                    Debug.LogWarning($"Spawned enemy prefab '{spawnDef.prefab.name}' has no EnemyController.");
-                    Destroy(go);
-                    continue;
-                }
-
-                // Move into position (your controller already supports this)
-                enemy.Teleport(spawnTile);
-
-                // Optional: initialize stats from spawnDef (if your SO exposes numbers)
-                if (spawnDef.baseDamage > 0)
-                {
-                    var fi = enemy.GetType().GetField("baseDamage");
-                    if (fi != null && fi.FieldType == typeof(int)) fi.SetValue(enemy, spawnDef.baseDamage);
-                }
-
-                // If using Behavior Designer, no extra work is required here.
-                // (If you want, you can set BT shared vars via API.)
-
-                _enemies.Add(enemy);
-            }
-        }*/
-
+        
         private void RegisterAlliesInScene()
         {
             _allies.Clear();
